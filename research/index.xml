@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Abdelrhman Allam</title>
+    <link>https://sl4x0.github.io/research/</link>
+    <description>Recent content in Researches on Abdelrhman Allam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sl4x0.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research | How can Local File Inclusion lead to RCE ?</title>
+      <link>https://sl4x0.github.io/research/local-file-inclusion-to-rce/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sl4x0.github.io/research/local-file-inclusion-to-rce/</guid>
+      <description>Content File Inclusion How the attck works for Remote File Inclusion How the attck works for Local File Inclusion Vulnerable PHP Function for File Inclusion Local File Inclusion To Remote Command Execution LFI to RCE via Apache Log LFI to RCE via Process Environ LFI to RCE via Other Files Fundamental of Perl Library for Exploit Website Introduction to Socket Introduction to Library for WWW in Perl Condition to use Socket or LWP Writing LFI to RCE Exploit with Perl Script Perl Exploit to Injecting code into Target Inject via logfile Inject via Other files Inject via process environment Perl Exploit to Executing injected code on Target Execute code from logfile Execute code from other files Execute code from process environment Execute code from logfile LFI to RCE Complete Exploit Use Logfile Injection Defenses References File Inclusion File Inclusion allows attackers to run their own code on a vulnerable website.</description>
+    </item>
+    
+    <item>
+      <title>Research | Bypass CSRF Protection w/ XSS</title>
+      <link>https://sl4x0.github.io/research/research-bypass-csrf-w-xss/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sl4x0.github.io/research/research-bypass-csrf-w-xss/</guid>
+      <description>Contents About XSS What can we do w/ XSS? Prevention About CSRF Scenario Using XSS for bypassing CSRF protection Another Bypass Technique Exploiting Scenario About XSS In Breif: Web Application receives data from client from GET function, then displays it.
+if(isset($_GET[&amp;#39;text&amp;#39;])) { $var = $_GET[&amp;#39;text&amp;#39;]; print $var; } // This code checks if the &amp;#39;text&amp;#39; variable is set for the GET request. // The code stores its contents in a variable called &amp;#34;$var&amp;#34;, And prints its contents.</description>
+    </item>
+    
+    <item>
+      <title>How i Use Notion with Bug Bounty and Pentesting Books</title>
+      <link>https://sl4x0.github.io/research/my-method-for-making-book-library-with-notion-for-bb-and-pentesting/</link>
+      <pubDate>Fri, 28 Oct 2022 15:10:05 +0000</pubDate>
+      
+      <guid>https://sl4x0.github.io/research/my-method-for-making-book-library-with-notion-for-bb-and-pentesting/</guid>
+      <description>You Can Duplicate the Template Form Here!
+Introduction Hello Guys!👋 In This Article, I will Explain How I use Notion effectively for Taking Notes, Summarising and Reviewing Books for Bug Bounty, and other Pentesting Notes or Books.
+So first of all we will use a notion’s function called “Table” or “Database” and It’s like what u imagine, Columns and Rows and within it, we can make a library.
+So without further a do let’s start!</description>
+    </item>
+    
+  </channel>
+</rss>
