@@ -1,0 +1,734 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html lang="en-us">
+  <head>
+    <title>Taha AbdElwahab</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Taha AbdElwahab" />
+    <meta name="description" content="Security Researcher and Bug Hunter ⚓" />
+    <link rel="stylesheet" href="https://esc4n0or.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Taha AbdElwahab"/>
+<meta name="twitter:description" content="Security Researcher and Bug Hunter⚓"/>
+
+    <meta property="og:title" content="Taha AbdElwahab" />
+<meta property="og:description" content="Security Researcher and Bug Hunter⚓" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://Esc4n0or.github.io/" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://Esc4n0or.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Taha AbdElwahab" /></a>
+      <h1>Taha AbdElwahab</h1>
+      <nav class="app-header-menu" style="margin-top: 30px;">
+        <a class="app-header-menu-item" href="/">Home</a>
+             ||   
+          
+        <a class="app-header-menu-item" href="/tags">Tags</a>
+             ||
+          
+       <a class="app-header-menu-item" href="/about">About</a>
+      </nav>
+      <p><h3>Security Researcher and Bug Hunter⚓</h3></p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Esc4n0or" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>My Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/esc4n0r_8" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>My Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/tahaabdelwahab8/" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>My Twitter</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    
+<title>1_Architecture_Fundamentals</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 100%;
+		color: rgb(255, 255, 255);
+	}
+}
+
+body {
+	line-height: 1.6;
+}
+
+a,
+a.visited {
+	color: sandybrown;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="0fc7c5b7-5b91-48e2-ad36-db86229d4538" class="page sans"><header><h1 class="page-title">1. Android’s Security Model</h1><p class="page-description"></p></header><div class="page-body"><ul id="0326dc28-7dec-45e0-a4f4-c9a8d6b53069" class="bulleted-list"><li style="list-style-type:disc">There are additions of Android Security Model.<ul id="4f79111a-a702-461c-a041-f31bac1a58b9" class="bulleted-list"><li style="list-style-type:circle">The newer one is multi-user support, Mandaroty Access Control [MAC] based on SELinux.</li></ul></li></ul><ul id="c5fb4c4c-00f0-4595-b9b2-26bbd5073cad" class="bulleted-list"><li style="list-style-type:disc">Android Architecture<figure id="6e20b1a9-656f-4fb7-b845-0dd57f868e6d" class="image"><a href="1%20Android%E2%80%99s%20Security%20Model%200fc7c5b75b9148e2ad36db86229d4538/Untitled.png"><img style="width:438px" src="1%20Android%E2%80%99s%20Security%20Model%200fc7c5b75b9148e2ad36db86229d4538/Untitled.png"/></a></figure></li></ul><ul id="e73d659e-5573-4713-b9a9-11dfd5c80842" class="bulleted-list"><li style="list-style-type:disc"><strong>Drivers </strong>are used for hardware, networking, filesystem access, and process management.</li></ul><ul id="100226cb-f1c3-49cc-94a5-0d4b3035a1e6" class="bulleted-list"><li style="list-style-type:disc">Android kernel is slightly different from a Regular Linux Kernel due to some features are called <mark class="highlight-red"><strong>Androidisms.</strong></mark></li></ul><ul id="4479d2bd-b0aa-4233-9564-56513c342947" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>Androidisms ⇒ {</strong></mark>low memory killer, wakelocks (integrated as part of wakeup sources support in the mainline Linux kernel), anonymous shared memory (ashmem), alarms, <span style="border-bottom:0.05em solid"><strong>paranoid networking</strong></span>, and <span style="border-bottom:0.05em solid"><strong>Binder</strong></span>}</li></ul><ul id="036107d0-3e86-485a-b4da-c0b1a4f7df51" class="bulleted-list"><li style="list-style-type:disc"><strong>Paranoid networking</strong> restricts access to network sockets to applications that hold specific permissions</li></ul><ul id="e3c61365-4302-4eb7-b905-4a59d5e40cdd" class="bulleted-list"><li style="list-style-type:disc">Java VM implementation → Dalivk<ul id="29992f08-b487-447d-89b1-3ee68640ed76" class="bulleted-list"><li style="list-style-type:circle">The native input format of Dalivk is Dalivk Executable{DEX}.</li></ul><ul id="15b3427c-84a9-458e-98e9-5499855050ca" class="bulleted-list"><li style="list-style-type:circle">The DEX is packaged in .dex files and they are packaged in Jar files or APK files.</li></ul></li></ul><ul id="6ae24918-5c7c-4fbf-be90-3e7150bb3951" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-pink"><strong>Register-based VMs</strong></mark> use fewer instructions, but the resulting code is larger than the corresponding code in a <mark class="highlight-purple"><strong>stack-based VM.</strong></mark></li></ul><ul id="ec8f6126-fd23-436d-9a30-588273078bbb" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>Android’s core Java libraries</strong></mark> are originally derived from the Apache <strong>Harmony </strong>project</li></ul><ul id="3c5d66cf-a5dd-4ffc-b3fc-0e41ff284f93" class="bulleted-list"><li style="list-style-type:disc">In most production devices, system libraries and preinstalled applications do not contain device-independent DEX code directly. As a performance optimization, DEX code is converted to a device-dependent format and stored in an Optimized DEX (.odex) file, which typically resides in the same directory as its parent JAR or APK file.</li></ul><ul id="aff2029b-5562-485b-a162-ab52357fc0d6" class="bulleted-list"><li style="list-style-type:disc">Each System service defines a remote interface that can be called from other services and apps.<ul id="625cdbb7-6849-46e0-a708-ae9873dcf2e3" class="bulleted-list"><li style="list-style-type:circle">And system services effectively implement an object-oriented OS on top of Linux.</li></ul></li></ul><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">IPC</summary><div class="indented"><ul id="45b1e9f6-8d19-4718-8d17-35ce9f9aa987" class="bulleted-list"><li style="list-style-type:disc">Each process has a separate Address space, and can&#x27;t one process access another process’s memory {Process isolation}.</li></ul><ul id="96d5da2e-b035-4058-8ba7-7fefb9e70dce" class="bulleted-list"><li style="list-style-type:disc">So if a process wants to offer some useful service(s) to other processes, it needs to provide some mechanism that allows other processes to discover and interact with those services. That mechanism is referred to as <mark class="highlight-red"><strong>IPC</strong></mark></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Binder</summary><div class="indented"><ul id="db099065-448b-45e5-bcd9-7508dc408d80" class="bulleted-list"><li style="list-style-type:disc">The interface is the /dev/binder device, which is implemented by the Binder kernel driver.</li></ul><ul id="fae711d7-1584-47cb-aa1c-185bd388b992" class="bulleted-list"><li style="list-style-type:disc">The Binder kernel driver manages IPC calls.</li></ul><ul id="81f80cb2-c7d8-453c-b526-6516334be6b5" class="bulleted-list"><li style="list-style-type:disc">Inter-process communication is implemented with a single ioctl() call that both sends and receives data through the <mark class="highlight-red"><strong>binder_write_read structure</strong></mark>, which consists of a <strong><mark class="highlight-purple">write_buffer</mark></strong><strong> </strong>containing commands for the driver, and a <mark class="highlight-pink"><strong>read_buffer </strong></mark>containing commands that the userspace needs to perform.</li></ul><figure id="6d2e4af9-791f-492d-a470-310554c2d8f2" class="image"><a href="1%20Android%E2%80%99s%20Security%20Model%200fc7c5b75b9148e2ad36db86229d4538/Untitled%201.png"><img style="width:512px" src="1%20Android%E2%80%99s%20Security%20Model%200fc7c5b75b9148e2ad36db86229d4538/Untitled%201.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="70a20855-84b6-46aa-8a3e-0ba6cc8fd639"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">In Android framework, they abstract interacting with binder functionality directly, but they uses proxies and stubs to smiplify the developer dealing with IPC calls.</div></figure><ul id="062b7c7d-e4c4-40cb-bee2-bb76e2888a20" class="bulleted-list"><li style="list-style-type:disc">The <strong>Binder driver</strong> manages part of the address space of each process.</li></ul><ul id="f415551a-709f-4031-ba17-dd0d6b97e35d" class="bulleted-list"><li style="list-style-type:disc">Higher Level IPC → Intents, Messengers, and Cotent Provider are built on top of Binder.</li></ul><ul id="8507cac5-3b6f-4b03-b4a8-412c33a29357" class="bulleted-list"><li style="list-style-type:disc"><strong>service interfaces</strong> that need to be <em><strong>exposed</strong></em><em> </em>to other processes can be defined using the <code>Android Interface Definition Language (AIDL)</code>, which enables clients to call remote services as if they were local Java objects.</li></ul><ul id="bfac2136-35b1-449b-af56-bc83b3f12651" class="bulleted-list"><li style="list-style-type:disc">AIDL generates <code>stubs</code>and <code>proxies</code>, and they are handle marshelling and unmarshelling, they also do a type safety cause binder is typeless.</li></ul><ul id="3b0f7ce2-c5af-49b0-8980-5e55452f055b" class="bulleted-list"><li style="list-style-type:disc">each object that can be accessed through the Binder is called <mark class="highlight-teal"><strong>Binder Object</strong></mark>.</li></ul><ul id="dddda5cd-3c58-4f5a-9d55-ade9f7559ff3" class="bulleted-list"><li style="list-style-type:disc">The Binder driver automatically adds the process ID (PID) and effective user ID (EUID) of the calling process to the transaction data.</li></ul><ul id="50f22941-52bb-47ab-91cd-1e9ee5201bed" class="bulleted-list"><li style="list-style-type:disc">The EUID and PID of the caller are accessible via the getCallingPid() and getCallingUid() methods of the android.os.Binder class, which is part of Android’s public API.</li></ul><ul id="85b82cdc-f805-4444-92a5-99b61cdeb717" class="bulleted-list"><li style="list-style-type:disc">Binder Objects maintain a unique identity across processes.</li></ul><ul id="51595822-c159-451a-821a-f774c89e9e40" class="bulleted-list"><li style="list-style-type:disc">The Binder Identity enables capability-based security that if a program wants to access a resource, it can be done by giving the program a capability unforgeable and encapsulated set of access to the target object.</li></ul><ul id="b639ccab-c34e-4f13-b27a-000d0c9349b1" class="bulleted-list"><li style="list-style-type:disc">In Android, Binder objects can act as capabilities and are called <mark class="highlight-orange"><strong>Binder tokens.</strong></mark></li></ul><ul id="73ef0358-26c8-43d3-9161-38d7471b6520" class="bulleted-list"><li style="list-style-type:disc">One notable use case of Binder tokens that is visible in the public API is window tokens. The top-level window of each activity is associated with a <mark class="highlight-pink">Binder token</mark> (called a window token), which Android’s <mark class="highlight-pink">window manager </mark>(the system service responsible for managing application windows) keeps track of.</li></ul><ul id="924adec3-4453-40c8-bd0e-28b955194335" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>OK, How Binder works?</strong></span><p id="1d5c2842-2d80-48fb-80b3-8d1c292cb43d" class="">→ In order to enable service discovery, the Binder framework has a single context manager, which maintains references to Binder objects. Android’s context manager implementation is the servicemanager native daemon. It is started very early in the boot process so that system services can register with it as they start up. Services are registered by passing a service name and a Binder reference to the service manager. Once a service is registered, Android’s Security Model 9 any client can obtain its Binder reference by using its name.</p></li></ul><ul id="83f8ba5b-6cae-48d6-8f8d-ba31da5fabde" class="bulleted-list"><li style="list-style-type:disc"></li></ul></div></details><p id="c0869f63-fbd4-4cbf-88d2-f5242b2f191c" class="">
+</p><ul id="1a76a445-d867-403c-9f44-4b5024433a64" class="bulleted-list"><li style="list-style-type:disc">The <mark class="highlight-red"><strong>framework </strong></mark>includes <mark class="highlight-teal_background">all Java libraries</mark> that are not part of the standard Java runtime (java.<em>, javax.</em>, and so on).<ul id="41647e46-d431-47fe-b168-34421717517d" class="bulleted-list"><li style="list-style-type:circle">Framework includes ⇒ base classes for activities, services, and content providers, GUI widgets, classes for file and database access, and classes that let you interact with device hardware</li></ul></li></ul><ul id="d9eb11e3-8eff-4328-a317-7b5d448378b6" class="bulleted-list"><li style="list-style-type:disc">Every operation in the Android framework above the kernel level is about a system service, but not every system service exists in the framework layer, they can be accessed from the managers like BluetoothManager is a facade for the BluetoothManagerService.<ul id="8ada5c2a-56b5-412a-91c9-aea737bc09e4" class="bulleted-list"><li style="list-style-type:circle">Managers ⇒ are facade classes used to access services.</li></ul></li></ul><ul id="9aa422c6-71ae-4a1a-b961-9c338dfd9600" class="toggle"><li><details open=""><summary><strong>System Apps Vs User Apps</strong></summary><h3 id="09fab741-43ad-49df-a63f-09fbaa35a860" class="">System apps</h3><ul id="2832f135-e284-4b6d-b11a-3fb4d826aafd" class="bulleted-list"><li style="list-style-type:disc">They are mounted as /system directory and read-only apps.</li></ul><ul id="413debe3-9e0d-4bfb-9d7b-c417da2bacee" class="bulleted-list"><li style="list-style-type:disc">System apps can be part of the core Android OS or can simply be preinstalled user applications.</li></ul><ul id="ba7fc06d-a549-45f9-924f-9574889c9b07" class="bulleted-list"><li style="list-style-type:disc">They can’t be uninstalled or changed by users.</li></ul><ul id="9043e87f-140b-4504-864e-b82a1304af47" class="bulleted-list"><li style="list-style-type:disc">From <strong>Android 4.4 and higher</strong>, Apps under <mark class="highlight-orange_background">/system/priv-app</mark> as privileged applications and will only grant permissions with protection level <mark class="highlight-pink">signatureOrSystem</mark> to privileged apps.</li></ul><ul id="c86577bb-4553-43e2-934f-fb395ee9ed93" class="bulleted-list"><li style="list-style-type:disc">They can be updated by users as long as the updates are signed with the same private key</li></ul><hr id="1e9b0fe4-d886-4b16-b280-d26f358e3c17"/><h3 id="09f2d254-c528-4c67-a5fc-08c2e97e760e" class="">User apps</h3><ul id="9c7ce59b-f28d-46f2-85ab-b42ff0376c54" class="bulleted-list"><li style="list-style-type:disc">They are mounted as /data directory and read-write apps so they can be uninstalled.</li></ul><ul id="4ef39d67-34be-4375-bd83-388f0223bfa7" class="bulleted-list"><li style="list-style-type:disc">Every App is running on its own sandboxing.</li></ul></details></li></ul><p id="37a15439-bf3c-4f25-aa6e-cbcc1ed0351c" class="">
+</p><ul id="20f0c5db-0fb3-4aa6-abce-63eb27ae3a96" class="bulleted-list"><li style="list-style-type:disc">The package name is in the same format as Java package names (<code>reverse domain name notation</code>; for example, com.google.email).</li></ul><ul id="29bb0cd4-2fa9-4872-863b-0cff7a61ad9f" class="bulleted-list"><li style="list-style-type:disc">The file <mark class="highlight-teal">AndroidManifest.xml</mark> is parsed during installing the app, thus the package name and the components in this file are registered within the system.</li></ul><ul id="98483ab4-4cdd-4666-a016-7365e65a3d7b" class="bulleted-list"><li style="list-style-type:disc">Android Components are ⇒ <ol type="1" id="bdb402c3-8252-4473-8bef-c973bf4e02a1" class="numbered-list" start="1"><li>Activity</li></ol><ol type="1" id="c8db9180-ec0f-4d43-b156-8460ef213255" class="numbered-list" start="2"><li>Service</li></ol><ol type="1" id="dd1bf275-731d-490e-8f5d-992980ead28b" class="numbered-list" start="3"><li>Content Provider</li></ol><ol type="1" id="f8971ffb-7719-487a-8b1f-056d979dceb5" class="numbered-list" start="4"><li>Broadcast Receiver</li></ol></li></ul><h3 id="16802c13-1fef-43b3-b042-566c36e63a3e" class="">Application Sandboxing</h3><ul id="b4f3b866-eee7-4770-b55c-73ccd93cfc5d" class="bulleted-list"><li style="list-style-type:disc">Android system takes advantages from the linux system like Process isolation, and user isolation, So User A can’t access resources of User B (unless explicitly granted permission) </li></ul><ul id="62611ce1-bc87-428a-9892-66c374ef5466" class="bulleted-list"><li style="list-style-type:disc">But in the Linux system (Desktop or server) we define many physical users to log in to the system, instead in Android cause it’s a personal device we define apps with these users.</li></ul><ul id="c4464b7b-ece0-40fe-b01b-725a6ed8d564" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-pink">UIDs </mark>for <mark class="highlight-pink">system services</mark> start from <mark class="highlight-pink">1000</mark>, with 1000 being the system (AID_SYSTEM) user, which has special (but still limited) privileges. Automatically generated UIDs for <mark class="highlight-purple">applications </mark>start at <mark class="highlight-purple">10000 </mark>(AID_APP), UID for root is (0)</li></ul><ul id="9bf9b604-d8e8-4939-8c6b-77f46594d3d6" class="bulleted-list"><li style="list-style-type:disc">Android does not have the traditional /etc/password file and its system UIDs are statically defined in the <mark class="highlight-red">android_filesystem_config.h</mark> header file</li></ul><ul id="74c2ef39-5950-4050-8267-baeb3429888f" class="bulleted-list"><li style="list-style-type:disc">Application UIDs are managed alongside other package metadata in the <mark class="highlight-red">/data/system/packages.xml</mark> file.</li></ul><ul id="c66de52c-d18a-47d7-b332-fbb67d9c7f60" class="bulleted-list"><li style="list-style-type:disc">Every <mark class="highlight-blue">GID </mark>has its own permissions.<ul id="245bfc7d-5070-4540-846a-805ae5ddb790" class="bulleted-list"><li style="list-style-type:circle">and the GID list is generated based on the permissions granted to the application.</li></ul></li></ul><h3 id="55d31026-35b4-483d-81f8-b9e2688533d4" class="">Code Signing and Platform Keys</h3><ul id="cf3c72c8-ebac-4f07-a445-f67cad13dc9b" class="bulleted-list"><li style="list-style-type:disc">In order to share the same UID, applications need to be signed by the same code signing key</li></ul><ul id="195ddd07-e2c6-4b1e-b6cd-5813dcec538b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red"><strong>Note</strong></mark>: for features such as <mark class="highlight-brown_background">private key</mark> or <mark class="highlight-yellow_background">user account access</mark>, explicit user confirmation is required for each accessed object, even if the requesting application has been granted the corresponding permission.</li></ul><ul id="60355cea-68d1-44ef-946d-56565f62086d" class="bulleted-list"><li style="list-style-type:disc">Android APK files are an extension of the Java JAR package format.<ul id="a84d9a30-33b8-497a-93af-8f1ff0b7101b" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-red_background">the code signing method used is also based on JAR signing.</mark></li></ul></li></ul><ul id="fe45bb53-38bb-4e29-9196-48824b5b602b" class="bulleted-list"><li style="list-style-type:disc">If there are different system components share the same platform key, then they can share resources and run in the same process.</li></ul><h3 id="d201e5a7-e46e-42bf-bdb5-7c2256eeef8d" class="">Multi-User Support</h3><ul id="aab257d9-fa1a-4fd0-b373-a3e3b2615c9d" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>Multi-user support</strong></mark> on handset devices is <mark class="highlight-red">disabled </mark>by setting the maximum number of users to 1.</li></ul><ul id="ba832b7c-848b-469f-82ea-90e8333c0a54" class="bulleted-list"><li style="list-style-type:disc">If there are some of physical users on the same device, the user’s <mark class="highlight-red">system directory</mark> of each user can be found in /data/system/users/[user-ID]</li></ul><ul id="03baeb1d-f8e0-45b6-b086-65ae24cc4739" class="bulleted-list"><li style="list-style-type:disc">The user to first initialize the device is called the <mark class="highlight-teal">device owner</mark>, and only they can manage other users or perform administrative tasks that influence the whole device (<mark class="highlight-red">such as factory reset</mark>).</li></ul><h3 id="34b724fc-9e10-4750-9163-de6b5c4d61e4" class="">SELinux</h3><ul id="2d5b01f2-d019-43f4-aafc-3bb61c8646f2" class="bulleted-list"><li style="list-style-type:disc">Default access conrol model is → Discretionary Access Control (DAC).</li></ul><ul id="5ed3fb3a-91bf-40cb-818e-2c7b3a962d83" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-red">Discretionary</mark></strong> here means that once a user gets access to a particular resource, they can pass it on to another user at their <strong>discretion</strong>, such as by setting the access mode of one of their files to world-readable. In contrast, <mark class="highlight-red"><strong>mandatory access control (MAC)</strong></mark> ensures that access to resources conforms to a system-wide set of authorization rules called a <mark class="highlight-teal"><strong>policy</strong></mark>. The policy can only be changed by an administrator, and users cannot override or bypass it in order to, for example, grant everyone access to their own files</li></ul><ul id="ab530fc2-2592-4062-b380-89d9750b4a43" class="bulleted-list"><li style="list-style-type:disc">SELinux is used to isolate core system daemons and user applications in different security domains and to define different access policies for each domain.</li></ul><ul id="f4980ab1-3670-45cb-9bd3-5167eaa80dbc" class="bulleted-list"><li style="list-style-type:disc">SELinux is deployed in <mark class="highlight-red"><strong>enforcing mode</strong></mark> (violations to the system policy generate runtime errors), but policy enforcement is only applied to <strong>core system daemons</strong>, but Applications still run in <strong><mark class="highlight-teal">permissive mode</mark></strong> and violations are logged but do not cause runtime errors.</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
