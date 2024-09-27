@@ -1,2 +1,2 @@
 # InfoSec Blog
-by [@sl4x0](https://www.twitter.com/sl4x0)
+by [@T4h4](https://github.com/Esc4n0or)
